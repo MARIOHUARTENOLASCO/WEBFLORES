@@ -16,10 +16,14 @@ body {
   width: 100%;
   max-width: 1200px;
   height: 430px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
   margin: auto;
+  text-align: justify;
+}
+
+@media only screen and (max-width: 1136px) {
+  .container {
+    text-align: center;
+  }
 }
 
 .container .card {
@@ -31,6 +35,7 @@ body {
   margin: 20px;
   text-align: center;
   transition: all 0.25s;
+  display: inline-block;
 }
 
 .container .card:hover {
